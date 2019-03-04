@@ -30,13 +30,7 @@ aside { float: right;
 main { margin: 0 210px 0 160px;
         padding: 1px 10px 20px 10px;
         background-color: #ffffff;
-        color: #006600; }
-footer { font-size: .70em;
-         text-align: center;
-         color: #006600;
-         background-color: #ffffff;
-         padding-top: 10px;
-         clear: both; }		 
+        color: #006600; }	 
 h1 { margin-top: 0;
      font-size: 3em;
      text-align: left;
@@ -55,15 +49,42 @@ nav a:active { color: #000000;}
 nav img { margin: 30px;}
 main p { margin: 20px; }
 main h2, main h3 { color: #cc66cc;
-                   background-color: #ffffff; }
+                   background-color: #ffffff;
+                   }
+.floatright { margin: 10px;
+              float: right; }
 aside h3 { padding-bottom: 2px;
            border-bottom: 1px solid #000000;
            margin: 10px;
            font-size: 0.90em;
 		   color: #cc66cc; }
 .news { font-size: 0.80em;
-        margin: 10px; }	
-	
+        margin: 10px; }		
+.quote {
+    background-color: #006600;
+    color:  white;
+    border:3px solid #cc66cc;
+    font-size: 100%;
+    width: 230px;
+    height: 110px;
+    float:initial;
+}
+ul {
+  float:left;
+}
+figcaption{
+    
+    display: table-caption;
+    caption-side:bottom;
+    background-color:#cc66cc;
+    color: white;
+    width: 340px;
+    height: 75px;
+    border: 5px double white;
+}
+.tab { margin-left: 40px; }
+
+
 </style> 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -87,27 +108,51 @@ aside h3 { padding-bottom: 2px;
    <img src="plsthumb.jpg" width="100" height="100" alt="Showy Lady Slipper">
  </nav>
  <aside id="news" role="complementary">
-    <h3>The Ridges</h3>
-    <p  class="news">The Ridges Nature Sanctuary offers wild orchid hikes during the summer months. For more info, visit <a href=
- "http://www.ridgesanctuary.org" target="_blank"><b>The Ridges</b></a>.</p>
-     <h3>Newport State Park</h3>
-     <p class="news">The <a href="http://www.newportwildernesssociety.org" target="_blank"><b>News</b></a>
- Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday. Stop by the park office to register.</p>
-   </aside>
+   <h3>The Ridges</h3>
+   <p  class="news">The Ridges Nature Sanctuary offers wild orchid hikes during the summer months. For more info, visit <a href=
+"http://www.ridgesanctuary.org" target="_blank"><b>The Ridges</b></a>.</p>
+    <h3>Newport State Park</h3>
+    <p class="news">The <a href="http://www.newportwildernesssociety.org" target="_blank"><b>News</b></a>
+Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday. Stop by the park office to register.</p>
+  </aside>
   <main role="main" id="content">
-    <h2>Door County</h2>
-    <p>Wisconsin&#39;s Door County Peninsula is ecologically diverse &mdash; upland and boreal forest, bogs, swamps, sand and rock beaches, limestone escarpments, and farmlands.</p>
-    <p>The variety of ecosystems supports a large number of wildflower species.</p>
-    <img src="trillium.jpg" width="300" height="250" alt="Trillium" id="floatright">
-    <h3>Explore the beauty <br>of Door County Wildflowers. . . .</h3>
-    <p>With five state parks, tons of county parks, and private nature sanctuaries, Door County is teeming with natural areas 
-      for you to stalk your favorite wildflowers.</p>
+    <h2>Door County Summer</h2>
+    <p>Wisconsin's Door County Peninsula is ecologically diverse — upland and boreal forest, bogs, swamps, sand and rock beaches, limestone escarpments, and farmlands.
+       The variety of ecosystems supports a large number of wildflower species.</p>
+
+    <h3> Explore Door County During The Summer</h3>
+   
+       <img id="floatright"src="yls.jpg" width="300" height="250" alt="Trillium">
+    <figcaption id="floatright" >This is the Yellow Lady's Snapper. Read some interesting facts about it! </figcaption>
+
+    
+    <p><b> Yellow Lady’s Slipper facts:</b> 4–24 inches tall; perennial; native plant; grows in wet,
+         shaded deciduous woods, swamps, and bogs; an orchid; official flower of Door County</p>
     
     
+    
+      <h3>List of Upcoming Events In The Spring</h3>
+        
+      <ul class="tab" type="square">
+
+            <br>
+            <li>June 21st - Summer Begins!</li>
+            <li>June 22nd - Summer Cookout</li>
+            <li>June 30th- Scavenger Hunt</li>
+            <li>July 4th - Fireworks</li>    
+            <li>July 10th - Farmers Market</li>
+          </ul>
+     
+       
+       
+        
+      
+        
   </main>
-</div>
+</div> 
   <footer>
-      <footer id ="footer"> <b>Copyright &copy; 2016 Door County Wild Flowers</b></footer>
-</footer>
+        <footer id ="footer"> <b>Copyright &copy; 2016 Door County Wild Flowers</b></footer>
+  </footer>
+
 </body>
 </html>

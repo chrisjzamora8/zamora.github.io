@@ -30,13 +30,7 @@ aside { float: right;
 main { margin: 0 210px 0 160px;
         padding: 1px 10px 20px 10px;
         background-color: #ffffff;
-        color: #006600; }
-footer { font-size: .70em;
-         text-align: center;
-         color: #006600;
-         background-color: #ffffff;
-         padding-top: 10px;
-         clear: both; }		 
+        color: #006600; }	 
 h1 { margin-top: 0;
      font-size: 3em;
      text-align: left;
@@ -55,15 +49,30 @@ nav a:active { color: #000000;}
 nav img { margin: 30px;}
 main p { margin: 20px; }
 main h2, main h3 { color: #cc66cc;
-                   background-color: #ffffff; }
+                   background-color: #ffffff;
+                   }
+.floatright { margin: 10px;
+              float: right; }
 aside h3 { padding-bottom: 2px;
            border-bottom: 1px solid #000000;
            margin: 10px;
            font-size: 0.90em;
 		   color: #cc66cc; }
 .news { font-size: 0.80em;
-        margin: 10px; }	
-	
+        margin: 10px; }		
+.quote {
+    background-color: #006600;
+    color:  white;
+    border:3px solid #cc66cc;
+    font-size: 100%;
+    width: 230px;
+    height: 110px;
+    float:initial;
+}
+ul {
+  float:left;
+}
+.tab { margin-left: 40px; }
 </style> 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -87,27 +96,46 @@ aside h3 { padding-bottom: 2px;
    <img src="plsthumb.jpg" width="100" height="100" alt="Showy Lady Slipper">
  </nav>
  <aside id="news" role="complementary">
-    <h3>The Ridges</h3>
-    <p  class="news">The Ridges Nature Sanctuary offers wild orchid hikes during the summer months. For more info, visit <a href=
- "http://www.ridgesanctuary.org" target="_blank"><b>The Ridges</b></a>.</p>
-     <h3>Newport State Park</h3>
-     <p class="news">The <a href="http://www.newportwildernesssociety.org" target="_blank"><b>News</b></a>
- Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday. Stop by the park office to register.</p>
-   </aside>
+   <h3>The Ridges</h3>
+   <p  class="news">The Ridges Nature Sanctuary offers wild orchid hikes during the summer months. For more info, visit <a href=
+"http://www.ridgesanctuary.org" target="_blank"><b>The Ridges</b></a>.</p>
+    <h3>Newport State Park</h3>
+    <p class="news">The <a href="http://www.newportwildernesssociety.org" target="_blank"><b>News</b></a>
+Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday. Stop by the park office to register.</p>
+  </aside>
   <main role="main" id="content">
-    <h2>Door County</h2>
-    <p>Wisconsin&#39;s Door County Peninsula is ecologically diverse &mdash; upland and boreal forest, bogs, swamps, sand and rock beaches, limestone escarpments, and farmlands.</p>
+    <h2>Door County Spring</h2>
+    <p>Wisconsin&#39;s Door County Peninsula is ecologically diverse &mdash; upland and boreal forest, bogs, swamps, sand and rock beaches, 
+        limestone escarpments, and farmlands.</p>
     <p>The variety of ecosystems supports a large number of wildflower species.</p>
     <img src="trillium.jpg" width="300" height="250" alt="Trillium" id="floatright">
-    <h3>Explore the beauty <br>of Door County Wildflowers. . . .</h3>
-    <p>With five state parks, tons of county parks, and private nature sanctuaries, Door County is teeming with natural areas 
-      for you to stalk your favorite wildflowers.</p>
-    
-    
+    <h3>Explore the beauty <br>of Door County Wildflowers like Trillium!</h3>
+    <p> <b>Trillium Facts:</b> 8–18 inches tall; perennial; native plant; grows in rich, moist deciduous woodlands; white flowers turn pink with age; 
+        fruit is a single red berry; protected flower species</p>
+        <aside class="quote"> "Door County is my favorite to visit during the spring! The various Trillium colors is such a beautiful sight."</aside>
+        <br>
+      <h3>List of Upcoming Events In The Spring</h3>
+       
+      <ul class="tab" type="square">
+
+         <br>
+         <li>April 1st - April Fools</li>
+         <li>April 21st - Easter Egg Hunt Around Parks!</li>
+         <li>April 1st - April Fools</li>
+         <li>April 21st - Easter Egg Hunt Around Parks!</li>     <li>April 1st - April Fools</li>
+         <li>April 21st - Easter Egg Hunt Around Parks!</li>     <li>April 1st - April Fools</li>
+         <li>April 21st - Easter Egg Hunt Around Parks!</li>
+       </ul>
+       
+       
+        
+     
+        
   </main>
 </div>
   <footer>
       <footer id ="footer"> <b>Copyright &copy; 2016 Door County Wild Flowers</b></footer>
 </footer>
+ 
 </body>
 </html>
