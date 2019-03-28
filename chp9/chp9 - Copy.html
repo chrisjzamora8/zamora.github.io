@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Manchester United</title>
+<link rel="stylesheet" type="text/css" href="chp9.css">
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<style>
+header, nav, main, footer, aside { display: block; }
+* { box-sizing: border-box;}
+
+header { background-color: white;
+         background-image: url(funny.jpg);
+         background-position: bottom;
+         background-repeat: repeat-x;
+         height: 90px;
+         
+         color:black;
+         text-align: right;
+         padding: 0 20px;
+         border-bottom: 2px solid #000000;
+         text-align: center; }		 
+nav { float: left;
+      width: 160px; }
+aside { float: right;
+        width: 200px; }
+body {
+    
+    background-image: url(supremeBrown.png);
+}
+        
+h2 { text-align: center;
+background-color: yellow;
+    
+}
+
+input { width: 15%;
+
+}
+
+
+caption { font-family: Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-bottom: 0.5em; }
+
+form {             
+font-family: Arial, sans-serif; padding: 10px;
+color: white;	}
+
+label { float: left; width: 100px; clear: left; text-align: left;            
+ padding-right: 10px; margin-top:10px; 
+ color: white;
+ }
+
+input, textarea { margin-top: 10px; display: block; } 
+
+#mySubmit { margin-left: 110px; }
+
+
+
+
+</style> 
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+  <header role="banner">
+    <span><a href="#content">Skip to Content</a></span>
+    <h1>Form Feedback HTML</h1>
+  </header>
+  <main role="main" id="content"> 
+   <main role="main" id="content"> 
+     
+
+  <form action="">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br>
+   <label for="myEmail">E-mail:</label>
+   <input type="email" name="myEmail" id="myEmail">
+   <br>
+
+ <form action="https://formspree.io/chrisjzamora8@gmail.com" >
+    Comment: <textarea name="comment" maxlength="1600" 
+    style="width:300px;height:170px;font-size:1.2em; 
+    background-color:brown;"></textarea><br>
+</form> 
+
+   <form action="https://formspree.io/chrisjzamora8@gmail.com" method="POST" target="_blank">
+            <input type="submit" value="Submit"></input> </form>
+           
+
+
+  </main>
+</form>
+ 
+    </footer>
+ 
+</div> 
+</body>
+</html>
