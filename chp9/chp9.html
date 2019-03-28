@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Manchester United</title>
+<link rel="stylesheet" type="text/css" href="chp9.css">
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<style>
+header, nav, main, footer, aside { display: block; }
+* { box-sizing: border-box;}
+
+header { background-color: white;
+         background-position: bottom;
+         background-repeat: repeat-x;
+         height: 90px;
+         
+         color:black;
+         text-align: right;
+         padding: 0 20px;
+         border-bottom: 2px solid #000000;
+         text-align: center; }		 
+nav { float: left;
+      width: 160px; }
+aside { float: right;
+        width: 200px; }
+body {
+    
+    background-image: url(supremeBrown.png);
+}
+        
+h2 { text-align: center;
+background-color: yellow;
+    
+}
+
+input { width: 15%;
+
+}
+
+
+caption { font-family: Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-bottom: 0.5em; }
+
+form {             
+font-family: Arial, sans-serif; padding: 10px;
+color: white;	}
+
+label { float: left; width: 100px; clear: left; text-align: left;            
+ padding-right: 10px; margin-top:10px; 
+ color: white;
+ }
+
+input, textarea { margin-top: 10px; display: block; } 
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: bottom;
+    background-repeat: repeat;
+    background-color:white;
+    color: black;
+    padding-left: 350px; padding-top: 30px;
+}
+
+
+
+</style> 
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<body>
+  
+        <h1>Form Submission Chapter 1</h1>
+   
+        <form method="POST" action="https://formspree.io/chrisjzamora8@gmail.com">
+            First name:<br>
+            <input type="text" name="firstname" placeholder="First Name" class="label">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" class="label" placeholder="Last Name">
+            <br>
+            Email: <input type="email" name="email" placeholder="Your email" class = "label"
+            > <br>
+            Comment: <textarea name="message" placeholder="Test Message" maxlength="1600"   
+            style=width:300px;height:170px;font-size:1.2em;background-color:brown;color:white;>
+            </textarea>
+            <button type="submit">Submit</button>
+
+          </form>
+ 
+    </footer>
+ 
+</div> 
+</body>
+</html>
