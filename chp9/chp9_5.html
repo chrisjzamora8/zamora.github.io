@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<title>Contact Form</title>
+<meta charset="utf-8">
+<style>
+body {
+    background-image: url(enjoi.png);
+}
+fieldset { width: 320px;
+           border: 2px ridge #ff0000;
+           padding: 10px;
+           margin-bottom: 10px; }
+legend { font-family: Georgia, "Times New Roman", serif;
+         font-weight: bold; }
+label { font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Music Survey</h1>
+<form method="POST" action="https://formspree.io/chrisjzamora8@gmail.com">
+<fieldset><legend>Customer Information:</legend>
+<label>First Name: <input type="text" name="fname" id="fname"></label><br><br>
+<label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
+<label>E-mail: <input type="text" name="email" id="email"></label><br><br>
+</fieldset>
+
+<fieldset>
+        <legend>Select Your Favorite Type of Music:</legend>
+        <input type="checkbox" name="music1" value="Pop"> Pop<br>
+        <input type="checkbox" name="music2" value="Classical"> Classical<br>
+        <input type="checkbox" name="music3" value="Rock"> Rock<br><br>
+        <input type="checkbox" name="music4" value="Folk"> Folk<br>
+        <input type="checkbox" name="music5" value="Rap"> Rap<br><br>
+        <input type="checkbox" name="music6" value="Other"> Other<br>     
+</fieldset>
+
+<fieldset>
+        <legend>Select How Often You Purchase Music CDs:</legend>
+        <input type="radio" name="time1" value="Weekly"> Weekly<br>
+        <input type="radio" name="time2" value="Yearly"> Yearly<br>
+        <input type="radio" name="time3" value="Monthly"> Montly<br><br>
+        <input type="radio" name="time4" value="Never Purchases"> Nerver Purchase CDs<br>    
+</fieldset>
+
+Where Do You Listen To Music:
+<select>
+        <option value="Home">At Home</option>
+        <option value="Car">In The Car</option>
+        <option value="Shower">In The Shower</option>
+        <option value="Anywhere">Anywhere (MP3 Player)</option>
+ </select> <br><br>
+
+<label for="comments">Comments:</label><br>
+<textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+<input type="submit" value="Submit"> <input type="reset">
+
+</form>
+</body>
