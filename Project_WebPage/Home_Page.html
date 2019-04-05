@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Backgrounds Example</title>
+
+<style rel="stylesheet" type="Text/CSS" href="ProjectCSS.CSS">
+header {
+    background-color: #43D9B8; 
+    color:black;
+    
+   
+}
+
+.logo {
+    width: 120x;
+    height: 120px;
+    padding-left: 50px;
+}
+
+p { font-size: 1.9em;
+ text-indent: 3em; 
+  }
+
+
+h2
+{
+    background-image:url(linkedinbooth.jpg);
+    background-position-x: 10cm;
+    background-position-y: 10cm;
+    background-repeat: no-repeat;
+    background-position: right top; 
+}
+
+dt 
+{
+    color:black;
+}
+body{
+    background-color:white;
+    color:black;
+}
+h2{ 
+    text-align:center;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color: peru;
+    transition: all ease-in-out 250ms;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-out 250ms;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+
+.polygonimg
+{
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    height: 20%;
+    width: 20%;
+    align-content: center;
+}
+
+.one {
+    background: #32325D;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%)
+}
+
+
+
+
+
+</style>
+<header> <h1></h1>
+    <img src="projectlogo1.png" class="logo" alt="logo">
+    
+    <nav>
+    <ul>
+        <li> <a href="Home">Home</a></li>
+        <li><a  href="LinkedIn">LinkedIn</a> </li>
+        <li><a href="GoogleSite/">Google Site</a></li>
+    </ul>
+     
+</nav>
+    </header>
+
+
+<h2> Welcome To My Webpage!
+     
+    <p></p> 
+      
+</h2> 
+
+
+
+
+<main class="one">
+    <img src="image1 (7).png" class="polygonimg" alt="reshape">
+    <p>About Me!</p>
+</main>
+
+<footer>
+
+
+</footer>
+<body>
+</body>
+</html>
