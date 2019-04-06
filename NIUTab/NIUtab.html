@@ -20,7 +20,7 @@ header {
 
 p { font-size: 1.2em;
  text-align: center;
-  color: black;
+  color: white;
   float:left;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
@@ -51,7 +51,7 @@ h2{
 }
 
 nav li{
-    display: inline-block;
+    display:inline-block;
     margin-left: 70px;
     text-transform: uppercase;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -88,12 +88,47 @@ nav a:hover::before {
     width:100%;
 }
 
+#navigation{
+      color: white;
+      font: italic;
+  }
 
+  .vertical-menu {
+  width: 200px;
+}
 
+.vertical-menu a {
+  background-color: #32325D;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  margin: 15%;
+}
 
+.vertical-menu a:hover {
+  background-color: peru;
+}
 
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+ 
+  
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 </style>
 <header> 
@@ -102,9 +137,11 @@ nav a:hover::before {
     
     <nav>
     <ul>
-        <li> <a href="Home">Home</a></li>
-        <li><a  href="LinkedIn">LinkedIn</a> </li>
-        <li><a href="GoogleSite/">Google Site</a></li>
+        <li> <a href="#Home">Home</a></li>
+        <li><a  href="#LinkedIn">NIU</a> </li>
+        <li><a href="#GoogleSite/">Resume</a></li>
+        <li><a href="#GoogleSite/">About Me</a></li>
+        <li><a href="#GoogleSite/">Contact</a></li>
     </ul>
      
 </nav>
@@ -113,39 +150,38 @@ nav a:hover::before {
 
 </h2> 
 
-
-
-
-<main>
-   
-              
-              </p>
-            </div>
-   
+<main>  
     
+<div class="row">
+  <div class="column vertical-menu"">
+    <h2 style="color:white;">Projects</h2>
+      <a href="#NIU">NIU</a>
+      <a href="#SQL">SQL Project</a>
+      <a href="#ERP">ERP Implementation</a>
+      <a href="#ProcessImprovement">Process Improvement</a>
+
+  </div>
+  <div class="column" style="color:white;">
+    <h2>Why I Chose NIU</h2>
+    <p>Having to reject offers from bigger schools like Maryland University was tough.
+    However, I chose Northern Illinois University in the end because it was the best option 
+    financially but it was also the best fit personally. I have been a competitive individually
+    since I was young and NIU creates an atmosphere that is competitive, but all students
+    are willing to collaborate and succeed together. 
+    </p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
 
 </main>
 
 <footer>
 
 
-</footer>
-<body>
-        <h2 style="color:white;"> My Time At Northern Illinois University
-                <div class='some-page-wrapper'>
-                        <div class='row'>
-                          <div class='column'>
-                            <div class='blue-column'>
-                              Some Text in Column One
-                            </div>
-                          </div>
-                          <div class='column'>
-                            <div class='green-column'>
-                              Some Text in Column Two
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+
 </body>
 </html>

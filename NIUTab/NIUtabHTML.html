@@ -16,7 +16,7 @@ header {
     padding-left: 50px;
 }
 
-p { font-size: 1.2em;
+p { font-size: 1.0em;
   color: black;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -63,28 +63,37 @@ nav a::before{
 nav a:hover::before {
     width:100%;}
 
-
-
-.column {
+    .column {
     float: left;
     width: 50%;
-    padding: 10px;
-
-  }
+    
   
 
+  }
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
+  .polygonimg
+{
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    height: 20%;
+    width: 20%;
+    text-align:center; 
+    
+}
+
+
+
+
 
 </style>
 <header> 
     <img src="projectlogo1.png" class="logo" alt="logo">
     
-    <nav>
+    <nav class="navigation">
     <ul>
         <li> <a href="Home">Home</a></li>
         <li><a  href="LinkedIn">NIU</a> </li>
@@ -101,18 +110,34 @@ nav a:hover::before {
 
 <body>
 
-    <h2 id="tabh2">NIU Activity</h2>
-
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: white; text-align: center;">NIU Activity</h2>
+    <nav style="text-align: center;color:white;">
     <div class="row">
        <div class="column">
-         <h2>Test Commit</h2>
-         <p>Some text..</p>
+         <h2><li> <a href="Projects">Projects</a></li></h2>
+         <p style="color:white; margin: 5%;">This link to my projects will show what I have been working on while
+            studying at Northern Illinois University. It will contain three
+            projects that I have found to be the most difficult throughout the years
+            and it allows me to display work that I am proud of.
+        </p>
+        <img src="ProjectManagement.jpg" class="polygonimg" style="height: 50%; 
+        width: 80%;">
+
+
        </div>
        <div class="column">
-         <h2>Column 2</h2>
-         <p>Some text..</p>
+         <h2><li> <a href="Organizations">Organizations</a></li></h2>
+         <p style="color:white;margin: 5%;"">This link will redirect you to a page that displays what I have participated
+            in outside of the classroom while studying at Northern Illinois University.
+            It is a link that will help you understand more about who I am, and 
+            what I like to do. Do no think of it as a hobbies page. 
+        </p>
+        <img src="jabulaniball.jpg" class="polygonimg" style="height:50%; width:70%;"
+
        </div>
      </div
+      </nav>
       
 </body>
 </html>
