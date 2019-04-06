@@ -63,11 +63,22 @@ nav a::before{
 nav a:hover::before {
     width:100%;}
 
-h2{
-  color:white;
-  text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 </style>
 <header> 
@@ -88,37 +99,20 @@ h2{
 
 
 
-<main>
-  <h2 id="tabh2">NIU Activity</h2>
+<body>
 
-  <nav style="text-align: center;color:white;">
-    <li> <a href="Projects">Projects</a></li>
-    <li> <a href="Organizations">Organizations</a></li>
+    <h2 id="tabh2">NIU Activity</h2>
 
     <div class="row">
-      <div class="column">
-        <h2>Test Commit</h2>
-        <p>Some text..</p>
-      </div>
-      <div class="column">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
-      </div>
-    </div>
-  </nav>
-
-
-  
-
-
-</main>
-
-<footer>
-
-
-</footer>
-
-<body>
+       <div class="column">
+         <h2>Test Commit</h2>
+         <p>Some text..</p>
+       </div>
+       <div class="column">
+         <h2>Column 2</h2>
+         <p>Some text..</p>
+       </div>
+     </div
       
 </body>
 </html>
