@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+      
+}
+
+html, body {
+height: 100%;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#input[type=email] {
+width: 20%;
+}
+
+.some-page-wrapper {
+    margin: 15px;
+    background-color: red;
+}
+
+.test {
+  margin: 120%;
+}
+
+#tabh2 {
+    color: white; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float: left;
+    background-color:#bbb
+  }
+
