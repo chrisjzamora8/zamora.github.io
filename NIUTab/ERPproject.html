@@ -4,7 +4,7 @@
 
 <title>Page Backgrounds Example</title>
 
-<style rel="stylesheet" type="Text/CSS" href="ProjectCSS.CSS">
+<style rel="stylesheet" type="Text/CSS" href="tabCSS.CSS">
 header {
     background-color: #43D9B8; 
     color:black;
@@ -128,6 +128,17 @@ nav a:hover::before {
     text-align:center; 
     
 }
+
+aside {
+    width: 150px;
+    height: 100px;
+    background-color: #32325D;
+    border: 3px solid white;
+
+    float: right;
+    font-size: 135%;
+    
+}
 </style>
 <header> 
 
@@ -135,7 +146,7 @@ nav a:hover::before {
     
     <nav>
     <ul>
-        <li> <a href="#Home">Home</a></li>
+        <li> <a href="Home_Page.html">Home</a></li>
         <li><a  href="#LinkedIn">NIU</a> </li>
         <li><a href="#GoogleSite/">Resume</a></li>
         <li><a href="#GoogleSite/">About Me</a></li>
@@ -153,31 +164,48 @@ nav a:hover::before {
 <div class="row">
   <div class="column vertical-menu"">
     <h2 style="color:white;">Projects</h2>
-      <a href="#NIU">NIU</a>
-      <a href="#SQL">SQL Project</a>
+      <a href="NIUtabHTML.html">NIU</a>
+      <a href="SQLtab.html">SQL Project</a>
       <a href="#ERP">ERP Implementation</a>
       <a href="#ProcessImprovement">Process Improvement</a>
 
   </div>
-  <div class="column" style="color:white;">
-    <h2>Why I Chose NIU</h2>
-    <p>Having to reject offers from bigger schools like Maryland University was tough.
-    However, I chose Northern Illinois University in the end because it was the best option 
-    financially but it was also the best fit personally. I have been a competitive individually
-    since I was young and NIU creates an atmosphere that is competitive, but all students
-    are willing to collaborate and succeed together. 
+  <div overflow="scroll" class="column" style="color:white;">
+    <h2>ERP Implementation</h2>
+
+<p>
+
+    The purpose of this assignment was to research two companies that implemented an
+        ERP system. One Implementation was supposed to be successful and the other was
+        supposed to be a failed ERP implementation. 
+    
+
+        <h2> Target vs Nestle</h2>
+       <p>   The purpose of this assignment was to research two companies that implemented an
+       ERP system. One Implementation was supposed to be successful and the other was
+       supposed to be a failed ERP implementation. We leanered through our research that Nestle had a successful implementation through SAP
+     . However, Target's implementation with SAP was unsuccessful because it did not meet their businesses
+     needs. 
+        </ul>
     </p>
+    </p>
+    
   </div>
   <div class="column">
-    <img class="polygonimg" style="height:70%; width: 80%;" src="winter.JPG"
+        <aside style="padding-left: 20%; color: white;">Open The Document To View The Final Project</aside>
+</div>
+
+<div>
+        <a href="ERP Nestle 1 (1).pdf"><img style="height: 7.5%; width: 7.5%;float:right;
+        padding-top: 1%;" class="polygonimg" src="wordlogo.png"> </a>
+    
+        <a href="Team 11 Presentation.pdf"><img style="height: 7.5%; width: 7.5%;float:right;
+             margin-left: 20%; padding-top: 5%;" class="polygonimg" src="power.png"> </a>
+        
+        <a href="CubeDairy_Group11_Dashboard.xlsx"><img style="height:10%; width:8%; float:right;
+            padding-top:5%;" class="polygonimg" src="excel1.png">  </a>
 </div>
 
 
-</main>
 
-<footer>
-
-
-
-</body>
-</html>
+</div>

@@ -4,7 +4,7 @@
 
 <title>Page Backgrounds Example</title>
 
-<style rel="stylesheet" type="Text/CSS" href="ProjectCSS.CSS">
+<style rel="stylesheet" type="Text/CSS" href="tabCSS.CSS">
 header {
     background-color: #43D9B8; 
     color:black;
@@ -18,11 +18,13 @@ header {
     padding-left: 50px;
 }
 
-p { font-size: 1.2em;
- text-align: center;
+p { font-size: .8 em;
+ text-align:center;
   color: white;
   float:left;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 18%;
+  padding-left: 15%;
   }
 
 
@@ -32,7 +34,7 @@ dt
     color:black;
 }
 body{
-    background-color:#32325D;
+    background-color: white;
     color:black;
 }
 h2{ 
@@ -76,10 +78,20 @@ nav a::before{
 
 nav a:hover::before {
     width:100%;
+    
+}
+
+
+.one {
+    background: #32325D;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)
+    
 }
 
 #navigation{
-      color: white;
+      color: #32325D;
       font: italic;
   }
 
@@ -102,13 +114,13 @@ nav a:hover::before {
 
 .vertical-menu a.active {
   background-color: #4CAF50;
-  color: white;
+  color: #32325D;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
  
   
 }
@@ -128,6 +140,23 @@ nav a:hover::before {
     text-align:center; 
     
 }
+
+aside {
+    width: 150px;
+    height: 100px;
+    background-color: #32325D;
+    border: 3px solid white;
+    float: right;
+    font-size: 135%;
+}
+
+figcaption{
+    background-color:black;
+    color: white;
+    width: 600px;
+    height: 55px;
+    border: 5px solid white;
+}
 </style>
 <header> 
 
@@ -135,7 +164,7 @@ nav a:hover::before {
     
     <nav>
     <ul>
-        <li> <a href="#Home">Home</a></li>
+        <li> <a href="Home_Page.html">Home</a></li>
         <li><a  href="#LinkedIn">NIU</a> </li>
         <li><a href="#GoogleSite/">Resume</a></li>
         <li><a href="#GoogleSite/">About Me</a></li>
@@ -148,36 +177,35 @@ nav a:hover::before {
 
 </h2> 
 
-<main>  
+<main class="one">  
     
 <div class="row">
   <div class="column vertical-menu"">
-    <h2 style="color:white;">Projects</h2>
-      <a href="#NIU">NIU</a>
-      <a href="#SQL">SQL Project</a>
-      <a href="#ERP">ERP Implementation</a>
-      <a href="#ProcessImprovement">Process Improvement</a>
+    <h2 style="color:white;">Involvement</h2>
+      <a href="NIUtabHTML.html">NIU</a>
+      <a href="#Soccer">NIU Men's Club Soccer</a>
+      <a href="#Scrum">Scrum Workshop</a>
+    
 
   </div>
-  <div class="column" style="color:white;">
-    <h2>Why I Chose NIU</h2>
-    <p>Having to reject offers from bigger schools like Maryland University was tough.
-    However, I chose Northern Illinois University in the end because it was the best option 
-    financially but it was also the best fit personally. I have been a competitive individually
-    since I was young and NIU creates an atmosphere that is competitive, but all students
-    are willing to collaborate and succeed together. 
-    </p>
+  <div overflow="scroll" class="column" style="color:white;">
+    <h2>NIU Men's Soccer Club</h2>
+    <img style="padding-left:10%;height:50%;width:80%; margin-bottom:80%;" src="soccerteam.jpg">
+    <p>My Freshman year I tryed out for the Northern Illinois University Men's Soccer Club. 
+        At the time it was a small program of about 15 guys that played recreationally 
+        and played friendlies against teams like Iowa University. A year later I wanted to 
+        help the club grow so I ran for Treasurer. I was voted as the treasurer for the club and I 
+        helped the team develop and ultimately join an elite conference known as the Midwest
+        Alliance Soccer Conference. I am now the president of the club and will continue
+    as president into my Senior year. </p>
+    <img style="height:40%;width:80%; padding-left:10%;" src="MASC.jpg">
+    <figure>
+        <figcaption>This is the crest for the MASC conference.</figcaption>
+    </figure>
   </div>
-  <div class="column">
-    <img class="polygonimg" style="height:70%; width: 80%;" src="winter.JPG"
+
+  
 </div>
-
-
 </main>
-
-<footer>
-
-
-
-</body>
+</head>
 </html>
