@@ -46,3 +46,11 @@ width: 20%;
     background-color:#bbb
   }
 
+  #figcaption{
+    background-color:black;
+    color: white;
+    width: 600px;
+    height: 55px;
+    border: 5px solid white;
+}
+
