@@ -4,3 +4,10 @@ div.ex1 {
   height: 110px;
   overflow: scroll;
 }
+
+#box {
+  float: left;
+  border: solid white;
+  height: 40%;
+  width:80%;
+}
