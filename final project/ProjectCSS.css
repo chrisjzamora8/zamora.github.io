@@ -15,6 +15,11 @@ height: 100%;
 width: 20%;
 }
 
+.field{
+    border-color: #43D9B8;
+    border-style: solid;
+}
+
 #nav{
     
 }
