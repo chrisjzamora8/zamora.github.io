@@ -1,0 +1,13 @@
+div.ex1 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: scroll;
+}
+
+#box {
+  float: left;
+  border: solid white;
+  height: 40%;
+  width:80%;
+}
