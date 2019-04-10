@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Backgrounds Example</title>
+
+<style rel="stylesheet"  type="text/css" href="style.css" >
+header {
+    background-color: #43D9B8; 
+    color:black;
+    
+   
+}
+
+.logo {
+    width: 120x;
+    height: 120px;
+    padding-left: 50px;
+}
+
+p { font-size: 1.2em;
+ text-align: center;
+  color: white;
+  float:left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+dt 
+{
+    color:black;
+}
+body{
+    background-color:white;
+    color:black;
+}
+h2{ 
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+nav li{
+    display:inline-block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color: peru;
+    transition: all ease-in-out 250ms;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-out 250ms;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+
+#navigation{
+      color: white;
+      font: italic;
+  }
+
+  .vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #32325D;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  margin: 15%;
+}
+
+.vertical-menu a:hover {
+  background-color: peru;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+ 
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.polygonimg
+{
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    height: 20%;
+    width: 20%;
+    text-align:center; 
+    
+}
+div.ex1 {
+    background-color: lightblue;
+  width: 100%;
+  height: 50%;
+  overflow: scroll;
+}
+
+#box {
+  width: 150px;
+    height: 100px;
+    background-color: #32325D;
+    color:white;
+    border: 3px dashed white;
+    padding: 5px; 
+    float: right;
+    font-size: 110%;
+}
+
+.one {background: #32325D;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)
+}
+
+</style>
+<header> 
+
+    <img src="projectlogo1.png" class="logo" alt="logo">
+    
+    <nav>
+      <ul>
+        <li> <a href="Project_WebPage/Home_Page.html">Home</a></li>
+        <li><a  href="NIUTab/NIUTabHTML.html">NIU</a> </li>
+        <li><a href="ResumeHTML.html">Resume</a></li>
+        <li><a  href="Contact Page/Contact.html">Contact</a> </li>
+        <li><a href="About Me/AboutMe.html">About</a></li>
+    </ul>
+     
+</nav>
+    </header>
+
+
+</h2> 
+
+<main class="one">  
+    
+<div class="row">
+  <div class="column vertical-menu"">
+    <h2 style="color:white; float:center; padding-right:20%;">Projects</h2>
+     <a href="Resume Spring 2019.pdf" onclick="window.print();"> <img style="padding-left:10%;" src="print.png"></a>
+     <a href="Resume Spring 2019.pdf" download> <img style="width:70%;float:left;
+     " src="downlad.png"> </a>
+
+  </div>
+  <div overflow="scroll" class="column" style="color:white;">
+    
+    <h2 style="padding-left:15%;">Christopher Zamora Resume</h2>
+    <div>
+<img src="ZamoraResume.PNG">
+                
+    </div>
+
+        </ul>
+    </p>
+    </p>
+    
+  </div>
+  <div class="column">
+     <aside id="box">  Click on image down below to open LinkedIn and Github pages!</aside>
+</div>
+
+<div class="column">
+        <a href="https://www.linkedin.com/in/christopher-zamora-99b360173/" target="_blank"><img style="height: 
+        20%; width: 40%;float:right;
+        padding-top: 1%;" class="polygonimg" src="LinkedIn_UI-02-512.png"> </a>
+             
+        <a href="https://github.com/chrisjzamora8" target="_blank"><img style="padding-left:68%;height:30%;
+        width:20%; padding-top: 5%;"src="github.svg"> </a>
+        <div>
+        
+      </div>
+</div>
+</div>
+</main>
+
+</head>
+</html>

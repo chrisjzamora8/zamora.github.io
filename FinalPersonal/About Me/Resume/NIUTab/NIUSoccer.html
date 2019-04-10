@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Backgrounds Example</title>
+
+<style rel="stylesheet" type="Text/CSS" href="tabCSS.CSS">
+header {
+    background-color: #43D9B8; 
+    color:black;
+    
+   
+}
+
+.logo {
+    width: 120x;
+    height: 120px;
+    padding-left: 50px;
+}
+
+p { font-size: .8 em;
+ text-align:center;
+  color: white;
+  float:left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 18%;
+  padding-left: 15%;
+  }
+
+
+
+dt 
+{
+    color:black;
+}
+body{
+    background-color: white;
+    color:black;
+}
+h2{ 
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+nav li{
+    display:inline-block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color: peru;
+    transition: all ease-in-out 250ms;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-out 250ms;
+}
+
+nav a:hover::before {
+    width:100%;
+    
+}
+
+
+.one {
+    background: #32325D;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%)
+    
+}
+
+#navigation{
+      color: #32325D;
+      font: italic;
+  }
+
+  .vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #32325D;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  margin: 15%;
+}
+
+.vertical-menu a:hover {
+  background-color: peru;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: #32325D;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+ 
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.polygonimg
+{
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    height: 20%;
+    width: 20%;
+    text-align:center; 
+    
+}
+
+aside {
+    width: 150px;
+    height: 100px;
+    background-color: #32325D;
+    border: 3px solid white;
+    float: right;
+    font-size: 135%;
+}
+
+figcaption{
+    background-color:black;
+    color: white;
+    width: 600px;
+    height: 55px;
+    border: 5px solid white;
+}
+</style>
+<header> 
+
+    <img src="projectlogo1.png" class="logo" alt="logo">
+    
+    <nav>
+      <ul>
+        <li> <a href="Project_WebPage/Home_Page.html">Home</a></li>
+        <li><a  href="NIUTabHTML.html">NIU</a> </li>
+        <li><a href="Resume/ResumeHTML.html">Resume</a></li>
+        <li><a  href="Contact Page/Contact.html">Contact</a> </li>
+        <li><a href="About Me/AboutMe.html">About</a></li>
+    </ul>
+     
+</nav>
+    </header>
+
+
+</h2> 
+
+<main class="one">  
+    
+<div class="row">
+  <div class="column vertical-menu"">
+    <h2 style="color:white;">Involvement</h2>
+      <a href="NIUtabHTML.html">NIU</a>
+      <a href="NIUSoccer.html">NIU Men's Club Soccer</a>
+      <a href="scrum.html">Scrum Workshop</a>
+    
+
+  </div>
+  <div overflow="scroll" class="column" style="color:white;">
+    <h2>NIU Men's Soccer Club</h2>
+    <img style="padding-left:10%;height:50%;width:80%; margin-bottom:80%;" src="soccerteam.jpg">
+    <p>My Freshman year I tryed out for the Northern Illinois University Men's Soccer Club. 
+        At the time it was a small program of about 15 guys that played recreationally 
+        and played friendlies against teams like Iowa University. A year later I wanted to 
+        help the club grow so I ran for Treasurer. I was voted as the treasurer for the club and I 
+        helped the team develop and ultimately join an elite conference known as the Midwest
+        Alliance Soccer Conference. I am now the president of the club and will continue
+    as president into my Senior year. </p>
+    <img style="height:40%;width:80%; padding-left:10%;" src="MASC.jpg">
+    <figure>
+        <figcaption>This is the crest for the MASC conference.</figcaption>
+    </figure>
+  </div>
+
+  
+</div>
+</main>
+</head>
+</html>

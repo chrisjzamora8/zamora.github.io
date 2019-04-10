@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Backgrounds Example</title>
+
+<style rel="stylesheet" type="Text/CSS" href="tabCSS.CSS">
+header {
+    background-color: #43D9B8; 
+    color:black;
+    
+   
+}
+
+.logo {
+    width: 120x;
+    height: 120px;
+    padding-left: 50px;
+}
+
+p { font-size: 1.2em;
+ text-align: center;
+  color: white;
+  float:left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+
+dt 
+{
+    color:black;
+}
+body{
+    background-color:#32325D;
+    color:black;
+}
+h2{ 
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+nav li{
+    display:inline-block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color: peru;
+    transition: all ease-in-out 250ms;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-out 250ms;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+
+#navigation{
+      color: white;
+      font: italic;
+  }
+
+  .vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #32325D;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  margin: 15%;
+}
+
+.vertical-menu a:hover {
+  background-color: peru;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+ 
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.polygonimg
+{
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    height: 20%;
+    width: 20%;
+    text-align:center; 
+    
+}
+
+aside {
+    width: 150px;
+    height: 100px;
+    background-color: #32325D;
+    border: 3px solid white;
+
+    float: right;
+    font-size: 135%;
+    
+}
+</style>
+<header> 
+
+    <img src="projectlogo1.png" class="logo" alt="logo">
+    
+    <nav>
+      <ul>
+        <li> <a href="Project_WebPage/Home_Page.html">Home</a></li>
+        <li><a  href="NIUTab/NIUTabHTML.html">NIU</a> </li>
+        <li><a href="Resume/ResumeHTML.html">Resume</a></li>
+        <li><a  href="Contact Page/Contact.html">Contact</a> </li>
+        <li><a href="About Me/AboutMe.html">About</a></li>
+    </ul>
+     
+</nav>
+    </header>
+
+
+</h2> 
+
+<main>  
+    
+<div class="row">
+  <div class="column vertical-menu"">
+    <h2 style="color:white;">Involvement</h2>
+      <a href="NIUtabHTML.html">NIU</a>
+      <a href="NIUSoccer.html">NIU Men's Club Soccer</a>
+      <a href="scrum.html">Scrum Workshop</a>
+    
+
+  </div>
+  <div overflow="scroll" class="column" style="color:white;">
+    <h2> Why Did I Choose NIU?</h2>
+    <img style="padding-left:20%;height:60%;width:70%;" src="barsema.jpg">
+    <p>Northern Illinois University offered me an opportunity to pursue a degree
+        in Operations Management and Information Systems. When talking to the advisors, students, 
+        and professors they even began talking about Data Analytics which was a path that other 
+        schools were behind in offering.
+    </p>
+    <img style="padding-left:40%;height:20%;width:30%;" src="NIU-Logo.png">
+    <p>I remember Jordan Lynch's run with the NIU Football team and his candidacy for 
+        Heisman. After that year there was only one school in Illinois that I could support. 
+        I grew attached to the underdog. Many of the students here often feel like they are overlooked. 
+        It is common to graduate here with a chip on your shoulder, or with something to prove. And that
+        is the mentality and mindsite that I have developed as well. 
+    </p>
+    
+    
+  </div>
+
+</div>
+</main>
+</head>
+</html>
