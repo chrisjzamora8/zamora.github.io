@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JDC UIUC Events</title>
+ <style rel="stylesheet" type="Text/CSS" href="JDC.css">
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+header {
+    background-color:#13294b; 
+    color:white;
+    
+   
+}
+
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background: #E84A27;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 15px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 5px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size:20px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #E84A27;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+h2{ 
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #E84A27
+    
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    
+    color:#E84A27;
+    transition: all ease-in-out 250ms;
+}
+
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #E84A27;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-out 250ms;
+}
+
+nav a:hover::before {
+    width:100%;
+}
+#footer {
+    background-color: #13294b;
+    color: white;
+    position: relative;
+    height: 2;
+    margin-top: 2%;;
+    clear: both; 
+    text-align:center;
+
+}
+</style>
+</head>
+<header>
+    
+
+        <img src="JDClogo2.png" class="logo" alt="logo">
+        <h1 style="float:right; padding-right:65%; padding-top: 3%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;"> JDC Tutoring</h1>
+        
+        <nav>
+            <ul>
+            <li> <a href="JDCHome.html">Home</a></li>
+            <li><a  href="JDCEvents.html">Events</a> </li>
+            <li><a href="Resume/ResumeHTML.html">Members</a></li>
+            <li><a  href="JDCContact.html">Contact</a> </li>
+            <li><a href="About Me/AboutMe.html">About</a></li>
+        </ul>
+         
+    </nav>
+        </header>
+<body>
+
+<h1 style="text-align: center; color:#13294b;">JDC Events Updated Monthly!</h1>
+
+<ol>
+        <li style="color:#E84A27; font-weight:bold;"> <u>May 25th:</u> Involvement Fair Booth - Come and Check Us Out!</li> <br>
+        <li style="color:#E84A27; font-weight:bold;"> <u>May 27th:</u> Fundraiser</li>
+        <dt>
+            We will be selling croissants and crayola 64 packs to help let kids learn to read and spel grammar. 
+        </dt>
+    </ol>
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      May<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</body>
+<nav>
+        <footer id = "footer">
+                <p style=>Contact Me:</p> <br> <a href="chrisjzamora8@gmail.com""> chrisjzamora8@gmail.com</a>
+          </footer></nav>
+</html>
+
+

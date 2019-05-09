@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<link rel="stylesheet" type="text/css" href="JDC.css">
+<title>Contact Form</title>
+<meta charset="utf-8">
+<style>
+body {
+    background-image: url(enjoi.png);
+}
+fieldset { width: 320px;
+           border: 2px ridge #ff0000;
+           padding: 10px;
+           margin-bottom: 10px; }
+legend { font-family: Georgia, "Times New Roman", serif;
+         font-weight: bold; }
+label { font-family: Arial, sans-serif; }
+</style>
+</head>
+<header>   <h1 style="float:right; padding-right:65%; padding-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;"> JDC Tutoring</h1>
+
+        <img src="JDClogo2.png" class="logo" alt="logo">
+     
+        <nav>
+                <ul>
+                        <li> <a href="JDCHome.html">Home</a></li>
+                        <li><a  href="JDCEvents.html">Events</a> </li>
+                        <li><a href="Resume/ResumeHTML.html">Members</a></li>
+                        <li><a  href="JDCContact.html">Contact</a> </li>
+                        <li><a href="About Me/AboutMe.html">About</a></li>
+                    </ul>
+         
+    </nav>
+        </header>
+<main class="one">
+<body>
+<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact Me</h1>
+<form method="POST" action="https://formspree.io/chrisjzamora8@gmail.com">
+<fieldset class="field"><legend>Customer Information:</legend>
+<label>First Name: <input type="text" name="fname" id="fname"></label><br><br>
+<label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
+<label>E-mail: <input type="text" name="email" id="email"></label><br><br>
+<label>Phone Number: <input type="tel" name="number" id="number"</label>
+</fieldset>
+
+
+<fieldset class="field">
+        <legend>Gender (we are gender fluid on this site):</legend>
+        <input type="checkbox" name="Male" value="Male"> Male<br>
+        <input type="checkbox" name="Female" value="Female"> Female<br>
+        <input type="checkbox" name="Other" value="Other"> Other<br><br>
+        <label for="comments">Comments:</label><br>
+<textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+           
+</fieldset>
+
+<fieldset class="field">
+        <legend>How would you like us to contact you?</legend>
+        <input type="radio" name="Phone" value="Phone"> Phone<br>
+        <input type="radio" name="Email" value="Email"> Email<br>
+        <input type="radio" name="Both" value="Both"> Both<br><br>
+      
+</fieldset>
+
+Age:
+<select>
+        <option value="0-18">0-18</option>
+        <option value="19-29">19-29</option>
+        <option value="30-39">30-39</option>
+        <option value="40-49">40-49</option>
+        <option value="50+">50+</option>
+ </select> <br><br>
+
+<label for="comments">Any Questions or Concerns:</label><br>
+<textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+<input type="submit" value="Submit"> <input type="reset">
+
+</form>
+<nav>
+<footer id = "footer">
+        <p style=>Contact Me:</p> <br> <a href="chrisjzamora8@gmail.com""> chrisjzamora8@gmail.com</a>
+  </footer></nav>
+</main>
+
+</body>
