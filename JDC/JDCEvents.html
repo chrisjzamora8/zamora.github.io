@@ -69,7 +69,7 @@ header {
   text-align: center;
   margin-bottom: 25px;
   font-size:20px;
-  color: #777;
+  color:#444;
 }
 
 .days li .active {
@@ -136,6 +136,9 @@ nav a::before{
 nav a:hover::before {
     width:100%;
 }
+li.ex1:hover, a.ex1:active {background-color:#13294b;
+color:#E84A27}
+
 #footer {
     background-color: #13294b;
     color: white;
@@ -144,6 +147,17 @@ nav a:hover::before {
     margin-top: 2%;;
     clear: both; 
     text-align:center;
+
+}
+aside {
+  float:right;
+  border: solid #E84A27;
+  height: 15%;
+  width: 25%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: initial;
+  color:white;
+  background-color:#13294b;
 
 }
 </style>
@@ -172,26 +186,34 @@ nav a:hover::before {
 
 <h3>
   Important Dates!
+  <aside>
+      The highlighted textbox will redirect you to the carpool signup sheet. Please utilize this as it will make logistics
+      and traveling substantially easier!
+    </aside>
 </h3>
 
+<div>
 <ol>
+    
         <li style="color:#E84A27; font-weight:bold;"> <u>May 25th:</u> Involvement Fair Booth - Come and Check Us Out!</li> <br>
         <li style="color:#E84A27; font-weight:bold;"> <u>May 27th:</u> Fundraiser</li>
-        <dt>
+        <dt style="color:#13294b;">
             We will be selling croissants and crayola 64 packs to help let kids learn to read and spel grammar. 
         </dt>
     </ol>
+  </div>
 <div class="month">      
   <ul>
     <!--Still need to add links to new pages to navigate through the months!-->
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
     <li>
-      May Sign Up<br>
+      May Carpool Sign Up<br>
       <span style="font-size:18px">2019</span>
     </li>
   </ul>
 </div>
+
 
 <ul class="weekdays">
   <li>We</li>
@@ -213,28 +235,28 @@ nav a:hover::before {
   <li>7</li>
   <li>8</li>
   <li>9</li>
-  <a href="https://www.groupcarpool.com/t/pvjwou"><li><span class="active">10 Travel</span></li></a> 
-  <li>11</li>
+  <li>10</li>
+  <b><a href="https://www.groupcarpool.com/t/pvjwou"><li class="ex1">11 Travel</li></a> </b>
   <li>12</li>
   <li>13</li>
   <li>14</li>
   <li>15</li>
   <li>16</li>
-  <a href="https://www.groupcarpool.com/t/pvjwou"><li><span class="active">17 Travel</span></li></a>
-  <li>18</li>
+  <li>17</li>
+  <b><a href="https://www.groupcarpool.com/t/pvjwou"><li class="ex1">18 Travel</li></a> </b>
   <li>19</li>
   <li>20</li>
   <li>21</li>
   <li>22</li>
   <li>23</li>
-  <a href="https://www.groupcarpool.com/t/pvjwou"><li><span class="active">24 Travel</span></li></a>
-  <li>25</li>
+  <li>24</li>  
+  <b><a href="https://www.groupcarpool.com/t/pvjwou"><li class="ex1">25 Travel</li></a> </b>
   <li>26</li>
   <li>27</li>
   <li>28</li>
   <li>29</li>
   <li>30</li>
-  <a href="https://www.groupcarpool.com/t/pvjwou"><li><span class="active">31 Travel</span></li></a>
+  <li>31</li>
 </ul>
 <h3 style="color:#13294b;">* Orange Box Indicates Travel Dates!</h3>
 </body>
