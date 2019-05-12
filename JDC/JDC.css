@@ -161,3 +161,41 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+.vertical-menu {
+    width: 300px;
+  }
+  
+  .vertical-menu a {
+    background-color: #32325D;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    margin: 15%;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: peru;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
